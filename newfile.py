@@ -1,4 +1,5 @@
-from telegram import Bot
+while True:
+    await asyncio.sleep(3600)from telegram import Bot
 import asyncio
 
 
