@@ -1,5 +1,11 @@
 while True:
-    await asyncio.sleep(3600)from telegram import Bot
+    import asyncio
+from telegram import Bot
+
+async def main():
+    await asyncio.sleep(3600)
+
+asyncio.run(main())
 import asyncio
 
 
