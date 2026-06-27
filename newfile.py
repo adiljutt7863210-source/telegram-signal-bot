@@ -1,7 +1,7 @@
 from telegram import Bot
 import asyncio
 
-TOKEN = "8689130185:AAHHoE5KBZdcKOcyTJX49w08aQCQWqNkxA4"
+TOKEN = 8689130185:AAEWVqNBhrsM3jEd2ZgocXMGUtHc8V6H6AY
 
 GROUP = "@pktrader2007"
 
