@@ -1,24 +1,27 @@
-while True:
-    import asyncio
+import asyncio
 from telegram import Bot
 
-async def main():
-    await asyncio.sleep(3600)
-
-asyncio.run(main())
-import asyncio
-
-
 TOKEN="8689130185:AAEWVqNBhrsM3jEd2ZgocXMGUtHc8V6H6AY"
+GROUP_ID = "@pktrader2007"
 
-GROUP = "@pktrader2007"
+MESSAGE = """🚀 BUY SIGNAL
+
+Pair: BTCUSDT
+Entry: 100000
+SL: 99000
+TP: 102000
+"""
 
 async def main():
-    bot = Bot(TOKEN)
+    bot = Bot(token=TOKEN)
 
-    await bot.send_message(
-        chat_id=GROUP,
-        text="🚀 BUY SIGNAL\n\nPair: BTCUSDT\nEntry: 100000\nSL: 99000\nTP: 102000"
-    )
+    while True:
+        await bot.send_message(
+            chat_id=GROUP_ID,
+            text=MESSAGE
+        )
+        print("Message Sent")
+        await asyncio.sleep(3600)  # ہر 1 گھنٹے بعد
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())
